@@ -1,0 +1,5 @@
+.Rhistory
+data/*
+*.log
+*.tmp
+output/
