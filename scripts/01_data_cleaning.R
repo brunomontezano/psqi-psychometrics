@@ -5,10 +5,39 @@ df <- foreign::read.spss(
 
 df <- df[!is.na(df$mora_t2), ]
 
+# FIX: I should add a test here to check if the column exists. It could be
+# problematic if I run it again and the old score gets used for a new sum
+# of items. Not urgent, but it would make the code more robust and safer.
 df$BDI_total <- rowSums(df[, grepl("^BDI", names(df))])
+
+# NOTE: In case the patient did not convert to BD, it should have one of the
+# depressive episodes (classical episode, atypical episode or episode with
+# melancholic features). The tests for NA are needed given the encoding nature
+# of the dataset.
+make_diagnosis <- function(bd, cur_dep, cur_atp_dep, cur_dep_w_mel) {
+  ifelse(
+    !is.na(bd) & bd == "conversão para TB",
+    "Bipolar disorder",
+    ifelse(
+      (!is.na(cur_dep) & cur_dep == 1) |
+        (!is.na(cur_atp_dep) & cur_atp_dep == 1) |
+        (!is.na(cur_dep_w_mel) & cur_dep_w_mel == 1),
+      "Current depressive episode",
+      "No mood episode at follow-up"
+    )
+  )
+}
+
+df$diagnosis <- make_diagnosis(
+  bd = df$TB_erros,
+  cur_dep = df$miniA08AT_t2,
+  cur_atp_dep = df$miniA08ATPA_t2,
+  cur_dep_w_mel = df$miniA15b_t2
+)
 
 cols_to_keep <- c(
   "rec", # ID
+  "diagnosis", # Diagnostic group (BD, current depression, no mood episode)
   "a03sexo_t2", # Gender
   "a03corpele_t2", # Skin color
   "a05idade_t2", # Age (in years)
@@ -88,6 +117,7 @@ cols_to_keep <- c(
   "BDI_total" # BDI total score
 )
 
+# NOTE: This is done to improve data wrangling in later steps of the analysis.
 df <- df[, cols_to_keep]
 
 saveRDS(object = df, file = "data/processed/cleaned.rds")
