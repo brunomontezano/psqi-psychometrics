@@ -5,9 +5,25 @@ df <- foreign::read.spss(
 
 df <- df[!is.na(df$mora_t2), ]
 
-# FIX: I should add a test here to check if the column exists. It could be
-# problematic if I run it again and the old score gets used for a new sum
-# of items. Not urgent, but it would make the code more robust and safer.
+# FIX: I should add a test here to check if the column exists (total BDI score).
+# It could be problematic if I run it again and the old score gets used for a
+# new sum of items.
+# Not urgent, but it would make the code more robust and safer.
+recode_bdi_item <- function(answer) {
+  switch(as.character(answer),
+    "0" = 0,
+    "1" = 1,
+    "2" = 1,
+    "3" = 2,
+    "4" = 2,
+    "5" = 3,
+    "6" = 3,
+    NA
+  )
+}
+
+df$BDI216_t2 <- sapply(df$BDI216_t2, recode_bdi_item)
+df$BDI218_t2 <- sapply(df$BDI218_t2, recode_bdi_item)
 df$BDI_total <- rowSums(df[, grepl("^BDI", names(df))])
 
 # NOTE: In case the patient did not convert to BD, it should have one of the
