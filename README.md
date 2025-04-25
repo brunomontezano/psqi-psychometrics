@@ -1,9 +1,9 @@
-# PSQI psychometric properties in a sample of patients with mood disorders <a href='https://github.com/brunomontezano/psqi-psychometrics/'><img src='https://github.com/user-attachments/assets/f0fe3faa-9f0a-4b4f-b8b3-b0aa1496c58a' align="right" height="139" /></a>
+# Psychometric properties of the Pittsburgh Sleep Quality Index in a sample of patients with mood disorders <a href='https://github.com/brunomontezano/psqi-psychometrics/'><img src='https://github.com/user-attachments/assets/f0fe3faa-9f0a-4b4f-b8b3-b0aa1496c58a' align="right" height="139" /></a>
 
-This repository contains the analysis for a manuscript on PSQI psychometric
-properties in a sample of patients with mood disorders (bipolar disorder, major
-depression with current depressive episode, and major depression with no mood
-episode).
+This repository contains the analysis for a manuscript on PSQI (Pittsburgh Sleep
+Quality Index) psychometric properties in a sample of patients with mood
+disorders (bipolar disorder, major depression with current depressive episode,
+and major depression with no mood episode).
 
 The directory structure was split into three main directories:
 
