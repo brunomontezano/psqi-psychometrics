@@ -16,6 +16,11 @@ documentation, respectively.
 - `output`: Includes two child directories (`fig` and `tbl`) for exporting of
 figures and tables, respectively.
 
+The `data` and `output` directories are included in the `.gitignore` file of
+this GitHub repository because the researchers responsible for data collection
+used in this project do not authorize the public sharing of the raw data and
+associated metadata.
+
 ## Contact me
 
 Feel free to contact me at `bmontezano at hcpa dot edu dot br`.
