@@ -1,4 +1,4 @@
-# PSQI psychometric properties in a sample of patients with mood disorders
+# PSQI psychometric properties in a sample of patients with mood disorders <a href='https://github.com/brunomontezano/psqi-psychometrics/'><img src='https://github.com/user-attachments/assets/f0fe3faa-9f0a-4b4f-b8b3-b0aa1496c58a' align="right" height="139" /></a>
 
 This repository contains the analysis for a manuscript on PSQI psychometric
 properties in a sample of patients with mood disorders (bipolar disorder, major
