@@ -1,0 +1,150 @@
+# ID
+rec
+# Diagnostic group (BD, current depression, no mood episode)
+diagnosis
+# Gender
+a03sexo_t2
+# Skin color
+a03corpele_t2
+# Age (in years)
+a05idade_t2
+# Studying in current year?
+a06estano_t2
+# Years of education
+a06esteanoa_t2
+# Worked for money (lifetime)
+a10trabdin_t2
+# Currently working?
+a12traba_t2
+# Type of accommodation
+a15acomod_t2
+# Has children?
+a15filho_t2
+# How many children?
+a15qtfil_t2
+# Do you have a religion?
+a15religi_t2
+# Lifetime psychological treatment
+a16tratpsic_t2
+# For how long (in months)?
+a17tratpsic_t2
+# Lifetime psychiatric treatment
+a18tratpsia_t2
+# How many psychiatrists?
+a18tratpsib_t2
+# For how long (in months)?
+a19tratpsi_t2
+# Have you ever taken any psychiatric medication?
+a20medicpsi_t2
+# How many different psychiatric medications?
+a20medicpsib_t2
+# For how long (medication treatment)?
+a20medicpsic_t2
+# Lifetime mood stabilizer
+a21reghumr_t2
+# Lifetime antipsychotics
+a22antipsic_t2
+# Lifetime antidepressants or antianxiety drugs?
+a23antideprs_t2
+# Lifetime benzodiazepine
+a24bzdp_t2
+# Lifetime barbiturates
+a25barb_t2
+# Lifetime herbal medicines
+a26natur_t2
+# Lifetime other non-listed medications
+a27moutrs_t2
+# What medications have you taken throughout your life?
+# a28medica_t2
+# What psychiatric medications are you currently taking?
+# a29medica_t2
+# Have you ever been admitted to a psychiatric hospital?
+a30interp_t2
+# How many times have you been admitted to ""?
+a31interv_t2
+# Have you ever used public mental health services?
+a32caps_t2
+# Has a doctor ever diagnosed you with bipolar disorder?
+a32interv01_t2
+# Are you married, dating or have a partner?
+a36relaciona_t2
+# Anyone in your family with a psychiatric history
+b00doefam_t2
+# Did your mother have any psychiatric illness?
+b01famil1_t2
+# What psychiatric illness did your mother have or had?
+b02doenca1_t2
+# Mother used or she is using psychiatric medication
+b03med1_t2
+# Mother ever been admitted to a psychiatric hospital?
+b04interna1_t2
+# Has your mother ever attempted suicide?
+b06tentsu1_t2
+# How many times?
+b07qtentsu1_t2
+# Did your father have any psychiatric illness?
+b08famil2_t2
+# What psychiatric illness did your father have or had?
+b09doenca2_t2
+# Has your father used or is he using psychiatric medication
+b10med2_t2
+# Father ever been admitted to a psychiatric hospital
+b11interna2_t2
+# Has your father ever attempted suicide?
+b13tentsu2_t2
+# How many times?
+b14qtentsu2_t2
+# At what age (in years) did you first try a substance?
+idadrog_t2
+# How many people live with you?
+mora_t2
+# Mood episode consensus
+TB_erros
+# Age of first depressive episode
+miniA11_t2
+# Number of depressive episodes
+miniA12_t2
+# BD family history
+miniA13_t2
+# PSQI component 1: Subjective sleep quality
+PSQI_COMP1
+# PSQI component 2: Sleep latency
+PSQI_COMP2
+# PSQI component 3: Sleep duration
+PSQI_COMP3
+# PSQI component 4: Habitual sleep efficiency
+PSQI_COMP4
+# PSQI component 5: Sleep disturbances
+PSQI_COMP5
+# PSQI component 6: Use of sleeping medication
+PSQI_COMP6
+# PSQI component 7: Daytime dysfunction
+PSQI_COMP7
+# PSQI total score (sum of previous components)
+PSQI_total
+# FAST domain 1: Autonomy
+FAST_auton_t2
+# FAST domain 2: Occupational functioning
+FAST_trab_t2
+# FAST domain 3: Cognitive functioning
+FAST_cogn_t2
+# FAST domain 4: Financial issues
+FAST_finan_t2
+# FAST domain 5: Interpersonal relationships
+FAST_relac_t2
+# FAST domain 6: Leisure time
+FAST_lazer_t2
+# FAST total score
+FAST_total_t2
+# BRIAN domain 1: Sleep
+BRIAN_sono_t2
+# BRIAN domain 2: Activity
+BRIAN_ativ_t2
+# BRIAN domain 3: Social
+BRIAN_social_t2
+# BRIAN domain 4: Nutrition
+BRIAN_alim_t2
+# BRIAN total score
+BRIAN_total_t2
+# BDI total score
+BDI_total
