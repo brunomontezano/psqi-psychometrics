@@ -1,5 +1,7 @@
 .Rhistory
-data/*
+data/raw
+data/processed
+data/metadata
 *.log
 *.tmp
 output/
