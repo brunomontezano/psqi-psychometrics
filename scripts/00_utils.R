@@ -31,6 +31,7 @@ recode_bdi_item <- function(answer) {
   )
 }
 
+
 is_it_a_binary_column <- function(column) {
   combinations <- list(
     c("0", "1", "8"),
